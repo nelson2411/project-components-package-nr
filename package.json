@@ -7,6 +7,17 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelson2411/project-components-package-nr"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "product-card",
+    "product",
+    "Nelson Rosales"
+  ],
   "engines": {
     "node": ">=10"
   },

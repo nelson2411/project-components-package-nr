@@ -1,8 +1,6 @@
-# NERM-Product-Card
+# NR-Product-Card
 
 This is a testing deploy packlage on NPM.
-
-### Nelson Rosales
 
 ### Example:
 
