@@ -1,0 +1,29 @@
+.bg-dark {
+  background-color: rgb(56, 56, 56);
+}
+
+.text-white {
+  color: whitesmoke;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.custom-image {
+  padding: 10px;
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  border-radius: 20px;
+}
+
+.custom-buttons button,
+.custom-buttons div {
+  border-color: antiquewhite;
+  color: whitesmoke;
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 0;
+  right: 10px;
+}
