@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTitle renders the component with the product name 1`] = `null`;
+
+exports[`ProductTitle renders without crashing 1`] = `null`;
