@@ -19,7 +19,7 @@
     "Nelson Rosales"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "scripts": {
     "start": "tsdx watch",
