@@ -7,37 +7,27 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
      matrix:
-      os: [ubuntu-latest, windows-latest, macOS-latest]
-      node: [16.x, 18.x]
-      exclude:
-      - os: macOS-latest
-        node: 10.x
-      - os: macOS-latest
-        node: 12.x
-      - os: macOS-latest
-        node: 14.x
-      - os: macOS-latest
-        node: 16.x
-      - os: macOS-latest
-        node: 18.x
+      os: [ubuntu-latest, windows-latest]
+      node: [18.x, 20.x]
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Use Node ${{ matrix.node }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node }}
+          cache: 'npm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Lint
-        run: yarn lint
+        run: npm run lint
 
       - name: Test
-        run: yarn test --ci --coverage --maxWorkers=2
+        run: npm run test -- --ci --coverage --maxWorkers=2
 
       - name: Build
-        run: yarn build
+        run: npm run build
