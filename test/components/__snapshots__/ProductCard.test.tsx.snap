@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard it must increment the product count 1`] = `null`;
+
+exports[`ProductCard renders the component with the product title 1`] = `null`;
+
+exports[`ProductCard renders without crashing 1`] = `null`;
